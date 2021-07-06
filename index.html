@@ -46,5 +46,11 @@ background-color: yellow;
   <label for="both">BOTH</label>
 </form>
 </div>
+
+<script>
+if (document.createElement("input").webkitSpeech === undefined) {
+	alert("Speech input is not supported in your browser.");
+}
+</script>
 </body>
 </html>
