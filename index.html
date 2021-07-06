@@ -36,7 +36,7 @@ background-color: yellow;
 <div class="center">
 <h1>AatmTech Web Search Engine</h1><br>
 <form>
-<input type="search" id="search" required x-webkit-speech="x-webkit-speech" >
+<input type="search" id="search" required >
 <input type="submit" id="submit" value="Submit"><br><br>
  <input type="radio" id="organic" name="stype" value="organic" checked>
   <label for="organic">ORGANIC</label>
@@ -47,10 +47,6 @@ background-color: yellow;
 </form>
 </div>
 
-<script>
-if (document.createElement("input").webkitSpeech === undefined) {
-	alert("Speech input is not supported in your browser.");
-}
-</script>
+
 </body>
 </html>
