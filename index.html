@@ -14,17 +14,18 @@ background-repeat: no-repeat;
 background-attachment: fixed;
   background-size: 100% 100%;
 color:white;
-display: grid;
 }
 .center {
 
-align-self: center;
-    justify-self: center;
+position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 border-radius:15px; 
 text-align: center;
 background-color: rgb(0,0,255);opacity:0.6;
 padding: 15px;
-vertical-align: middle;
 }
 #search {
 Width: 80%;
