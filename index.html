@@ -41,6 +41,7 @@ background-color: white;
 }
 #CounterVisitor {
 clear: both; 
+bottom:0;
 }
 </style>
 </head>
@@ -59,7 +60,8 @@ clear: both;
 </form>
 </div>
 
-<div id="CounterVisitor">
+<div id="CounterVisitor"> 
+Visitors: 
 </div>
 <script>
 var n = localStorage.getItem('on_load_counter');
@@ -72,9 +74,9 @@ n++;
 localStorage.setItem("on_load_counter", n);
 
 nums = n.toString().split('').map(Number);
-document.getElementById('CounterVisitor').innerHTML = '';
+//document.getElementById('CounterVisitor').innerHTML = '';
 for (var i of nums) {
-  document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">Visitor count: ' + i + '</span>';
+  document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
 }
 
 </script>
